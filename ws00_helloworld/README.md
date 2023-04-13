@@ -28,10 +28,10 @@
       之所以继承比直接实例化Node更被推荐，是因为继承方式可以在一个进程内组织多个节点，
       这对于提高节点间的通信效率是很有帮助的，但是直接实例化则与该功能不兼容
       
-      ```bash
+  ```bash
       // 自定义类继承 Node
       class MyNode: public rclcpp::Node {
-public: 
+    public: 
         MyNode():Node("hello_node_cpp"){ //构造函数， 设置名称
             RCLCPP_INFO(this->get_logger(), "hello world!(继承方式)");
         }

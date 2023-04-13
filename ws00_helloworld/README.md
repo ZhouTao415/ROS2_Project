@@ -36,8 +36,6 @@ public:
             RCLCPP_INFO(this->get_logger(), "hello world!(继承方式)");
         }
 };
-
-
 int main(int argc, char const *argv[])
 {
     // initialization

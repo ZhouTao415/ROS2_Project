@@ -5,10 +5,9 @@
      3.创建结点指针
      4.输出日志
      5.释放资源
-     
-   ## we have two method:
+  
    
-   Method 1, not recommend
+   ## Method 1, not recommend
    ```bash
    #include "rclcpp/rclcpp.hpp"
     int main(int argc, char **argv){
@@ -26,7 +25,8 @@
 }
    ```
    ##  Method2： recommend
-      之所以继承比直接实例化Node更被推荐，是因为继承方式可以在一个进程内组织多个节点，这对于提高节点间的通信效率是很有帮助的，但是直接实例化则与该功能不兼容
+      之所以继承比直接实例化Node更被推荐，是因为继承方式可以在一个进程内组织多个节点，
+      这对于提高节点间的通信效率是很有帮助的，但是直接实例化则与该功能不兼容
       
       ```bash
       // 自定义类继承 Node

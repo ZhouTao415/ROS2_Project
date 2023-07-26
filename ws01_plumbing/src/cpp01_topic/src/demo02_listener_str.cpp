@@ -17,7 +17,8 @@
 // 3.自定义定义节点类；
 class Listener: public rclcpp::Node {
 public:
-// Constructors, initialize the Node: listerner_node_cpp
+    // Listener是一个构造函数
+    // Constructors, initialize the Node: listerner_node_cpp
     Listener():Node("listerner_node_cpp") {
         RCLCPP_INFO(this->get_logger(), "creat the subscriber");
         // 3-1.创建订阅方；

@@ -23,6 +23,7 @@ public:
 
     Talker():Node("talker_node_cpp"), count_(0){  
       RCLCPP_INFO(this->get_logger(), "发布节点创建！");
+      RCLCPP_INFO(this->get_logger(), "作者: TAO");
       publisher_ = this->create_publisher<std_msgs::msg::String>("chatter", 10);  
       timer_  = this->create_wall_timer(500ms, std::bind(&Talker::on_timer, this));
     }
@@ -104,7 +105,7 @@ int main(int argc, char ** argv) {
 //         RCLCPP_INFO(this->get_logger(), "发布的消息：'%s'", message.data.c_str()); //转化为 c string
 //         publisher_->publish(message);
 //       }
-
+//       这行代码定义了一个名为publisher_的ROS 2发布者指针，该发布者用于发布std_msgs::msg::String类型的消息
 //       rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
 //       rclcpp::TimerBase::SharedPtr timer_;
 //       size_t count_; //计数器

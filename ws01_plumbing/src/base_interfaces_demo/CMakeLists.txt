@@ -9,8 +9,9 @@ endif()
 find_package(ament_cmake REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
+# 查找构建时候的功能包
 find_package(rosidl_default_generators REQUIRED)
-#为接口文件生成源码
+#为接口文件生成源码， 传入功能包路径
 rosidl_generate_interfaces(${PROJECT_NAME}
     "msg/Student.msg"
 )

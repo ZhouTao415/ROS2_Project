@@ -54,7 +54,7 @@ int main(int argc, char ** argv) {
 
 
 
-// // 1.包含头文件；
+// // 1.包含头文件
 // #include "rclcpp/rclcpp.hpp"
 // #include "std_msgs/msg/string.hpp"
 

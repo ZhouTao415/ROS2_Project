@@ -34,6 +34,8 @@ git remote set-url origin git@github.com:ZhouTao415/ROS2_Project.git
 ```
 7. 自动化更改：现在，您应该能够通过 SSH 进行认证。再次尝试执行 git 自动化命令：
 ```bash
+git add .
+git commit -m "xxx"
 git push
 ```
 

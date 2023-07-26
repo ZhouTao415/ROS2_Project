@@ -23,11 +23,10 @@ ls ~/.ssh
 ssh-keygen -t rsa -C "yourmail@example.com"
 ```
 6. 将您的 SSH 账户添加到 GitHub：
-复制SSH的内容
+复制SSH的内容,并登录到您的GitHub帐户，转到“设置”（设置）>“SSH和GPG密钥”（SSH和GPG钥匙）>“新SSH密钥”（新SSH钥匙）
 ```bash
 cat ~/.ssh/id_rsa.pub
 ```
-登录到您的GitHub帐户，转到“设置”（设置）>“SSH和GPG密钥”（SSH和GPG钥匙）>“新SSH密钥”（新SSH钥匙），将刚才复制的快捷键内容粘贴到文本描述框，并为该钥匙提供一个性的标题
 7. 更改修改远程仓库的URL：
 现在，您需要将远程仓库的URL从HTTPS更改为SSH。在您的ROS2_Project目录下，使用以下命令远程仓库的URL：
 ```bash

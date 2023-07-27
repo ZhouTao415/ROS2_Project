@@ -18,7 +18,8 @@ ros2 run cpp01_topic demo03_talker_stu
 ```
 
 ### 检验话题是否发布出去 
-    "chatter_stu" is topic name 
+"chatter_stu" is topic name 
+
 ```bash
 ros2 topic echo /chatter_stu
 ```

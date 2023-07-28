@@ -1,6 +1,7 @@
 # ROS2_Project
 
-## - VMware虚拟机的Ubuntu里 git 的使用
+## git
+### - VMware虚拟机的Ubuntu里 git 的使用
 1. 安装git
 ```bash
 sudo apt-get install git
@@ -38,7 +39,7 @@ git add .
 git commit -m "xxx"
 git push
 ```
-### 常见问题 
+#### 常见问题 
 git push 的时候遇到冲突： 请见[issues 1](https://github.com/ZhouTao415/ROS2_Project/issues/1)
 
 

@@ -24,9 +24,9 @@ ros2 run cpp01_topic demo03_talker_stu
 ```bash
 ros2 pkg create cpp02_service --build-type ament_cmake --dependencies rclcpp base_interfaces_demo --node-name demo01_server
 ```
-pkg: cpp02_service 功能包名
-build-type: ament_cmake C++ 类型
-dependencies:  rclcpp 和 base_interfaces_demo 依赖包
+pkg: cpp02_service 功能包名,
+build-type: ament_cmake C++ 类型,
+dependencies:  rclcpp 和 base_interfaces_demo 依赖包,
 node-name: demo01_server 节点名称
 
 ### 常见问题

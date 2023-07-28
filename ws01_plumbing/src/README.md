@@ -38,12 +38,19 @@ node-name: demo01_server 节点名称
 ros2 topic echo /chatter_stu
 ```
 
-#### 2. vscode的Terminal运行而Ubuntu自带的Terminal不运行的原因
+### 2. vscode的Terminal运行而Ubuntu自带的Terminal不运行的原因
 因为没有在Ubuntu自带的Terminal中
 
 ```bash
 colcon build
 ```
+### 3. 验证接口消息是否正确
+
+```bash
+ros2 interface show base_interfaces_demo/srv/AddInts
+```
+"base_interfaces_demo/srv/AddInts"你定义的接口文件的位置
+
 
 
 

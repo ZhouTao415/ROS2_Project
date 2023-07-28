@@ -38,6 +38,11 @@ git add .
 git commit -m "xxx"
 git push
 ```
+### 常见问题 
+git push 的时候遇到冲突： 请见[issues 1](https://github.com/ZhouTao415/ROS2_Project/issues/1)
+
+
+
 
 
 

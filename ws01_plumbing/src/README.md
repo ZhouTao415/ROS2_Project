@@ -25,10 +25,11 @@ ros2 topic echo /chatter_stu
 "chatter_stu" is topic name 
 
 #### 2. vscode的Terminal运行而Ubuntu自带的Terminal不运行的原因
+因为没有在Ubuntu自带的Terminal中
 
 ```bash
 colcon build
 ```
-因为没有在Ubuntu自带的Terminal中
+
 
 

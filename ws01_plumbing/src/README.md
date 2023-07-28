@@ -29,9 +29,9 @@ build-type: ament_cmake C++ 类型,
 dependencies:  rclcpp 和 base_interfaces_demo 依赖包,
 node-name: demo01_server 节点名称
 
-### 常见问题
+## 常见问题
 
-#### 1. 检验话题是否发布出去 
+### 1. 检验话题是否发布出去 
 "chatter_stu" is topic name 
 
 ```bash

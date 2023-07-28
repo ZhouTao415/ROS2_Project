@@ -18,11 +18,12 @@ ros2 run cpp01_topic demo03_talker_stu
 ```
 ### 常见问题
 #### 1. 检验话题是否发布出去 
+"chatter_stu" is topic name 
 
 ```bash
 ros2 topic echo /chatter_stu
 ```
-"chatter_stu" is topic name 
+
 
 #### 2. vscode的Terminal运行而Ubuntu自带的Terminal不运行的原因
 因为没有在Ubuntu自带的Terminal中

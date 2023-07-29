@@ -14,7 +14,7 @@
 
 class AddIntsServer: public rclcpp::Node {
 public: 
-    AddIntsServer():Node("add_ints_Server_node_cpp"){ //构造函数， 设置名称
+    AddIntsServer():Node("add_ints_server_node_cpp"){ //构造函数， 设置名称
         RCLCPP_INFO(this->get_logger(), "服务端节点创建");
     }
 };

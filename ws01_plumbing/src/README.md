@@ -21,6 +21,10 @@ ros2 run cpp01_topic demo02_listener_str
 ```bash
 ros2 run cpp01_topic demo03_talker_stu
 ```
+#### Subscription: 话题订阅
+```bash
+ros2 run cpp01_topic demo04_listener_stu 
+```
 
 ## 服务通信 Service
 终端下进入工作空间的src目录，创建C++功能包

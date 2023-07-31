@@ -36,13 +36,13 @@ build-type: ament_cmake C++ 类型,
 dependencies:  rclcpp 和 base_interfaces_demo 依赖包,
 node-name: demo01_server 节点名称
 
-### Client Request: 客户端请求
-```bash
-ros2 run cpp02_service demo02_client
-```
 ### Server Response: 服务端响应
 ```bash
 ros2 run cpp02_service demo01_server
+```
+### Client Request: 客户端请求
+```bash
+ros2 run cpp02_service demo02_client 10 40
 ```
 
 

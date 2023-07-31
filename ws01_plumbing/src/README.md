@@ -69,7 +69,8 @@ ros2 interface show base_interfaces_demo/srv/AddInts
 "base_interfaces_demo/srv/AddInts"你定义的接口文件的位置
 
 ### 4. 如何在没有客户端下测试请求响应的数据 
-工具：请求我们的客户端 ros2 service call
+请求我们的客户端 ros2 service call
+
 ```bash
 ros2 service call /add_ints base_interfaces_demo/srv/AddInts "{'num1': 10, 'num2': 30}"
 ```

@@ -45,6 +45,13 @@ ros2 run cpp02_service demo01_server
 ros2 run cpp02_service demo02_client 10 40
 ```
 
+## 动作通信 Action
+终端下进入工作空间的src目录，创建C++功能包
+```bash
+ros2 pkg create cpp03_action --build-type ament_cmake --dependencies rclcpp rclcpp_action base_interfaces_demo --node-name demo01_action_server
+```
+### 动作服务端
+
 
 ## 常见问题
 
@@ -61,7 +68,7 @@ ros2 topic echo /chatter_stu
 ```bash
 colcon build
 ```
-### 3. 验证接口消息是否正确
+### 3. 验证Topic/Service/Action接口消息是否正确
 
 ```bash
 ros2 interface show base_interfaces_demo/srv/AddInts

@@ -44,15 +44,21 @@ ros2 run cpp02_service demo01_server
 ### Client Request: 客户端请求
 ```bash
 ros2 run cpp02_service demo02_client 10 40
-```
 
+```
 ## ● 动作通信 Action
 终端下进入工作空间的src目录，创建C++功能包
 ```bash
 ros2 pkg create cpp03_action --build-type ament_cmake --dependencies rclcpp rclcpp_action base_interfaces_demo --node-name demo01_action_server
 ```
-
-### 动作服务端
+### Action Server Response: 动作服务端响应
+```bash
+ros2 run cpp03_action demo01_action_server 
+```
+### Action Client Request: 动作客户端请求
+```bash
+ros2 run cpp03_action demo02_action_client 
+```
 
 
 ## 常见问题

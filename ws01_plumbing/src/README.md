@@ -61,6 +61,8 @@ ros2 run cpp03_action demo02_action_client
 ```
 
 
+
+
 ## 常见问题
 
 ### 1. 检验话题是否发布出去 
@@ -94,6 +96,11 @@ ros2 service call /add_ints base_interfaces_demo/srv/AddInts "{'num1': 10, 'num2
 “base_interfaces_demo/srv/AddInts“: 接口的消息类型, 
 “"{'num1': 10, 'num2': 30}"”: json/ymal格式的提交数据
 
-
-
+### 5. 检验action是否可以响应 
+```bash
+ros2 action send_goal /get_sum base_interfaces_demo/action/Progress -f "{'num': 10}"
+```
+get_sum： 话题名称
+base_interfaces_demo/action/Progress： 消息类型
+-f: feedback
 

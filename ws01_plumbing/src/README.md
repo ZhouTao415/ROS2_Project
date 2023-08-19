@@ -100,7 +100,7 @@ ros2 service call /add_ints base_interfaces_demo/srv/AddInts "{'num1': 10, 'num2
 ```bash
 ros2 action send_goal /get_sum base_interfaces_demo/action/Progress -f "{'num': 10}"
 ```
-get_sum： 话题名称
+get_sum： 话题名称, 
 base_interfaces_demo/action/Progress： 消息类型, 
 -f: feedback
 

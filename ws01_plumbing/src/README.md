@@ -57,7 +57,7 @@ ros2 run cpp03_action demo01_action_server
 ```
 ### Action Client Request: 动作客户端请求
 ```bash
-ros2 run cpp03_action demo02_action_client 
+ros2 run cpp03_action demo02_action_client 10
 ```
 
 

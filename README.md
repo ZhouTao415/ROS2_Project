@@ -165,6 +165,24 @@ git diff # the diff of working directory and staging area
 git diff --staged   # the diff of staging area and last commit
 ```
 
+- Visual Diff Tools
+
+-- Setting
+```bash
+git config --global diff.tool vscode
+```
+```bash
+git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
+```
+```bash
+git config --global -e
+```
+
+-- Open the diffTools
+```bash
+git difftool
+```
+
 ### show, ls-tree, restore, clean
 
 - `show` will show git objects

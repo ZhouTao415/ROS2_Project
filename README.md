@@ -102,7 +102,7 @@ git config --help # details
 git config -h # brief
 ```
 
-## creating snapshots
+## Creating Snapshots
 
 - staging area(last snapshot version)
 
@@ -116,10 +116,10 @@ git add file1 # add file1 to staging area
 git commit -m 'first commit' # every commit git store fill content not diff
 ```
 
-- add and commit to staging at same time
+- add and commit to staging at same time "-am" is same "-a -m" a(all) m(modify) 
 
 ```bash
-git commit -ma 'Refactor code.'
+git commit -am 'Refactor code.'
 ```
 
 - remove from staging area
@@ -129,6 +129,8 @@ git rm --cached -r bin/
 ```
 
 ### status
+
+- sb: s(short)b(branch)
 
 ```bash
 git status -sb

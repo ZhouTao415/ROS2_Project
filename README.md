@@ -147,7 +147,7 @@ echo logs/ > .gitignore
 code .gitignore
 ```
 
-[.gitignore template](https://github.com/github/gitignore)
+- [.gitignore template](https://github.com/github/gitignore)
 
 ### status
 
@@ -158,10 +158,11 @@ git status -sb
 ```
 
 ### diff, difftool
+- Viewing Staged and Unstaged Changes
 
 ```bash
 git diff # the diff of working directory and staging area
-git diff --stages   # the diff of staging area and last commit
+git diff --staged   # the diff of staging area and last commit
 ```
 
 ### show, ls-tree, restore, clean

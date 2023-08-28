@@ -209,14 +209,20 @@ git ls-tree HEAD~1 # show all
 - `restore` move the version to the last version
 
 ```bash
-git restore --staged file2.js
+git restore --staged file2.js *.js
 ```
-
+- Discarding Local Changes
 ```bash
 git clean -fd # remove un-tracking files in working directory
 ```
 
 ## Browsing history
+
+- Viewing History
+```bash
+git log 
+git log --oneline --reverse # 
+```
 
 ### `--state`, `--patch`
 

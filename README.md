@@ -129,6 +129,26 @@ git commit -am 'Refactor code.'
 git rm --cached -r bin/
 ```
 
+- Renaming or Moving Files
+
+```bash
+git mv main.js files1.js
+```
+
+- Ignoring Files
+-- creating the .gitignore files 
+
+```bash
+echo logs/ > .gitignore
+```
+- opening the File
+
+```bash
+code .gitignore
+```
+
+[.gitignore template](https://github.com/github/gitignore)
+
 ### status
 
 - "-sb: -s(short) -b(branch)

@@ -216,12 +216,18 @@ git restore --staged file2.js *.js
 git clean -fd # remove un-tracking files in working directory
 ```
 
+- Restoring a File to an eariler/previous version
+```bash
+git restore --source=HEAD~1 file1.js
+```
+
+
 ## Browsing history
 
 - Viewing History
 ```bash
 git log 
-git log --oneline --reverse # 
+git log --oneline --reverse 
 ```
 
 ### `--state`, `--patch`

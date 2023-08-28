@@ -182,6 +182,10 @@ git config --global -e
 ```bash
 git difftool
 ```
+We can check all modified file.
+```bash
+git difftool --staged
+```
 
 ### show, ls-tree, restore, clean
 

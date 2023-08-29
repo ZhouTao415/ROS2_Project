@@ -11,6 +11,7 @@
   - [`--state`, `--patch`](#--state---patch)
   - [filter commits](#filter-commits)
   - [format git log](#format-git-log)
+  - [Creating Aliases](#creating-aliases)
   - [viewing a commit](#viewing-a-commit)
   - [viewing the changes between commits](#viewing-the-changes-between-commits)
   - [checking out a commit](#checking-out-a-commit)
@@ -241,7 +242,8 @@ git log --oneline --patch # the diff detail
 
 ```bash
 git log --oneline -3 # last 3 commits
-git log --oneline --author="XING YAHAO"
+git log --oneline --author="Zhou Tao"
+git log --oneline --before="2020-08-17"
 git log --oneline --after="2020-08-17"
 git log --oneline --after="yesterday"
 git log --oneline --after="one week ago"
@@ -261,6 +263,16 @@ git log --pretty=format:"%an committed %h on %cd" # %an -> author name, %h -> ha
 git log --pretty=format:"%Cgreen%an%Creset committed %h on %cd" # %Cgreen %Creset  change color
 ```
 
+### Creating Aliases
+- using git lg ist same as "log --pretty=format:"%an committed %h on %cd"
+
+```bash
+git config --global alias.lg "log --pretty=format:"%an committed %h on %cd"
+```
+- using git unsatage is same as "restore --staged ."
+```bash
+git config --global alias.unstage "restore --staged ."
+```
 ### viewing a commit
 
 ```bash
@@ -281,7 +293,7 @@ git diff HEAD~2 HEAD --name-status
 ### checking out a commit
 
 ```bash
-git checkout c0a77029c # You are in 'detached HEAD' state
+ 
 git log --oneline -all
 git checkout master
 ```
@@ -332,6 +344,8 @@ git tag v1.0 {hash} // lightweight tag
 git checkout v1.0
 git tag -a v1.1 -m "My version 1.1"  // annotate tag
 git tag -n # show tag message
+git show v1.1
+git tag -d v1.1
 ```
 
 ## Branching

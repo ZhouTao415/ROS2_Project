@@ -60,6 +60,12 @@ ros2 run cpp03_action demo01_action_server
 ros2 run cpp03_action demo02_action_client 10
 ```
 
+# 参数服务 Parameter
+
+- 演示参数相关类的使用: key value (description)
+```bash
+ros2 pkg create cpp04_param --build-type ament_cmake --dependencies rclcpp --node-name demo00_param
+```
 
 
 

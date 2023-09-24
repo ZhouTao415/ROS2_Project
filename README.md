@@ -537,11 +537,11 @@ git remote -v
 
 ```bash
 git fetch origin # download all commit
-git branch -vv
+git branch -vv 
 git merge origin/master
 ```
 
-### pulling(fetch + merge)
+### pulling = (fetch + merge)
 
 ```bash
 git pull # if branch diverse three way merge

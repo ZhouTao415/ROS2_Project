@@ -57,7 +57,9 @@ public:
 
       // 判断是否包含
       RCLCPP_INFO(this->get_logger(), "是否包含car_name? %d", this->has_parameter("car_name"));
+      RCLCPP_INFO(this->get_logger(), "是否包含width? %d", this->has_parameter("width"));
       RCLCPP_INFO(this->get_logger(), "是否包含height? %d", this->has_parameter("height"));
+
 
     }
     // 3-3. 改

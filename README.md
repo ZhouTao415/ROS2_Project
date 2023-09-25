@@ -567,8 +567,9 @@ git tag -d v1.0
 
 ```bash
 git branch -vv
-git branch -r
-git push -d origin feature/password
+git branch -r # check the remote branch
+git branch -u origin feature/password # push the new branch on GitHub
+git push -d origin feature/password # delete the new branch on GitHub
 git branch -r
 ```
 
@@ -576,20 +577,20 @@ git branch -r
 
 ```bash
 git switch -C feature/change-password origin/feature/change-password
-git remote prune origin
+git remote prune origin # To remove the track an branches that are not under remote
 ```
 
 ### keeping a forked repository up to date
 
 ```bash
 git remote
-git remote -v
+git remote -v # -v (verbose)
 git remote add upstream {BASE_URL}
 git remote
 git remote -v
 # git remote rename upstream base
-# git remote rm base
-git fetch upstream
+# git remote rm base # rm (remove)
+git fetch upstream/base
 git switch master
 git merge base/master
 ```

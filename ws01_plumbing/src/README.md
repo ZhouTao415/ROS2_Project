@@ -67,6 +67,9 @@ ros2 run cpp03_action demo02_action_client 10
 ros2 pkg create cpp04_param --build-type ament_cmake --dependencies rclcpp --node-name demo00_param
 ```
 
+```bash
+ros2 run cpp04_param demo01_param_server
+```
 
 
 ## 常见问题
@@ -110,3 +113,15 @@ get_sum： 话题名称,
 base_interfaces_demo/action/Progress： 消息类型, 
 -f: feedback
 
+### 5. 验证参数是否被创建
+```bash
+ros2 param list 
+```
+
+- 查看参数具体的值
+
+```bash
+ros2 param get /my_param_server_node_cpp car_name
+```
+- node name: /my_param_server_node_cpp 
+- parameter name: car_name

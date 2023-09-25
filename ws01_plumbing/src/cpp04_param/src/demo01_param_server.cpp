@@ -34,10 +34,31 @@ public:
     // 3-1. 增
     void declare_param() {
       RCLCPP_INFO(this->get_logger(), "------------------增---------------");
+      this->declare_parameter("car_name", "volkswagen");
+      this->declare_parameter("width", 1.55);
+      this->declare_parameter("wheels", 4);
     }
     // 3-2. 查
     void get_param() {
       RCLCPP_INFO(this->get_logger(), "------------------查---------------");
+      // this->get_parameter();
+      // this->get_parameters();
+      // this->has_parameter();
+
+      // 获取指定参数
+      auto car = this->get_parameter("car_name");
+      RCLCPP_INFO(this->get_logger(), "key = %s, value = %s", car.get_name().c_str(), car.as_string().c_str());
+      // 获取一些参数
+      auto params = this->get_parameters({"car_name", "width", "wheels"});
+      for (auto &&param : params)
+      {
+        RCLCPP_INFO(this->get_logger(), "(%s = %s)", param.get_name().c_str(), param.value_to_string().c_str());
+      }
+
+      // 判断是否包含
+      RCLCPP_INFO(this->get_logger(), "是否包含car_name? %d", this->has_parameter("car_name"));
+      RCLCPP_INFO(this->get_logger(), "是否包含height? %d", this->has_parameter("height"));
+
     }
     // 3-3. 改
     void update_param() {

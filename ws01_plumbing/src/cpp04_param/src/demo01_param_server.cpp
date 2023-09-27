@@ -37,6 +37,11 @@ public:
       this->declare_parameter("car_name", "volkswagen");
       this->declare_parameter("width", 1.55);
       this->declare_parameter("wheels", 4);
+      // 需要封装一个parameter 对象
+      // constrain condition
+      // 也可以设置新参数
+      // 但需此设置或调用：rclcpp::NodeOptions().allow_undeclared_parameters(true) 
+      this->set_parameter(rclcpp::Parameter("height", 2.00));
     }
     // 3-2. 查
     void get_param() {
@@ -59,19 +64,23 @@ public:
       RCLCPP_INFO(this->get_logger(), "是否包含car_name? %d", this->has_parameter("car_name"));
       RCLCPP_INFO(this->get_logger(), "是否包含width? %d", this->has_parameter("width"));
       RCLCPP_INFO(this->get_logger(), "是否包含height? %d", this->has_parameter("height"));
-
-
     }
     // 3-3. 改
     void update_param() {
       RCLCPP_INFO(this->get_logger(), "------------------改---------------");
+      this->set_parameter(rclcpp::Parameter("width", 1.75));
+      RCLCPP_INFO(this->get_logger(), "width = %.2f", get_parameter("width").as_double());
     }
     // 3-4. 删
     void del_param() {
       RCLCPP_INFO(this->get_logger(), "------------------删---------------");
+      // this->undeclare_parameter("car_name"); // 不能删除声明的参数
+      RCLCPP_INFO(this->get_logger(), "删除后还包含height么? %d", this->has_parameter("height"));
+      this->undeclare_parameter("height"); //可以删除没有声明然后设置的参数
+      RCLCPP_INFO(this->get_logger(), "删除后还包含height么? %d", this->has_parameter("height"));
     }
 
-private:
+  private:
     // 两个参数接口的请求和响应
     
 };

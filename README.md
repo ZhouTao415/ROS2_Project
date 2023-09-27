@@ -597,10 +597,16 @@ git merge base/master
 
 ## rewriting history
 
+- Don't rewrite public history!
 ### undoing commits
 
+- soft: Removes the commit only
+- mixed: Unstages files
+- hard: Discards local changes
+  年
 ```bash
 git reset --hard HEAD~1
+git show HEAD
 git diff --cached
 ```
 
@@ -618,10 +624,12 @@ git revert HEAD
 git revert HEAD~3..HEAD
 git reset --hard HEAD~3
 git revert --no-commit HEAD~3.. # same with HEAD~3..HEAD
+# git revert --abort
 git revert --continue
 
 git reflog
 git reset --hard HEAD@{1}
+git refolg show feature # show the history of the feature pointer
 ```
 
 ### amending the last commits
@@ -645,6 +653,7 @@ git rebase --continue
 ```bash
 git rebase -i 6cbd931~ # ^ means parent
 # drop commit
+# DU: delete & update
 ```
 
 ### rewording commit messages

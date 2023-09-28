@@ -654,6 +654,7 @@ git rebase --continue
 git rebase -i 6cbd931~ # ^ means parent
 # drop commit
 # DU: delete & update
+git rebase -i HEAD~3
 ```
 
 ### rewording commit messages

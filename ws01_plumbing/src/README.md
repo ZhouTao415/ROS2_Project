@@ -71,6 +71,13 @@ ros2 pkg create cpp04_param --build-type ament_cmake --dependencies rclcpp --nod
 ros2 run cpp04_param demo01_param_server
 ```
 
+# Metapackage
+
+- create a Metapackage
+```bash
+ros2 pkg create package_name build_type(C++/Python)
+```
+
 
 ## 常见问题
 

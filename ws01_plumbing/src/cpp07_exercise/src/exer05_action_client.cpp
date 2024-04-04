@@ -59,6 +59,7 @@ public:
       options.result_callback = std::bind(&Exer05_action_client::result_callback, this, _1);
       client_->async_send_goal(goal, options);
       }
+      
       // 3-3.处理目标响应；
       void goal_response_callback(std::shared_ptr<rclcpp_action::ClientGoalHandle<Nav>> goal_handler) {
         // 如果拒绝处理，那么goal_handler == nullptr
